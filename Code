@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int max(int k,int nums[k]){
+    int r = 0;
+    for(int i = 0;i < k;i++){
+    if(nums[i] >= r){
+        r = nums[i];
+        }
+    }
+    return r;
+}
+
+int min(int k,int nums[k]){
+    int r = nums[0];
+    for(int i = 0;i < k;i++){
+    if(nums[i] <= r){
+        r = nums[i];
+        }
+    }
+    return r;
+}
+
+
+int sum(int k,int nums[]){
+    int r = 0;
+    int k = (sizeof(nums) / sizeof(nums[0]))+2;
+    for(int i = 0;i < k;i++){
+        r = r + nums[i];
+    }
+    return r;
+}
+
+
+
+int main(){
+    
+
+
+    return 0;
+}
