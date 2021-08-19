@@ -22,14 +22,14 @@ int min(int k,int nums[k]){
 }
 
 
-int sum(int k,int nums[]){
+int sum(int n,int nums[]){
     int r = 0;
-    int k = (sizeof(nums) / sizeof(nums[0]))+2;
-    for(int i = 0;i < k;i++){
+    for(int i = 0;i < n;i++){
         r = r + nums[i];
     }
     return r;
 }
+
 
 
 
